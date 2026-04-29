@@ -1,0 +1,19 @@
+# GCP-VQVAE Protein Structure Tokenizer Dependencies
+#
+# It is recommended to create a dedicated conda environment.
+# The vq_encoder_decoder codebase must also be available (--vq_code_dir).
+
+torch
+accelerate
+biopython
+h5py
+numpy
+pandas
+pyyaml
+python-box
+tqdm
+x-transformers
+torch_geometric
+torch_cluster
+torch_scatter
+graphein
