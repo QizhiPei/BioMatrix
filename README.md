@@ -7,13 +7,13 @@
 </div>
 <hr>
 <div align="center" style="line-height: 1;">
-  <a href="https://arxiv.org/abs/xxxx.xxxxx"><b>Paper Link</b> 📄</a> &nbsp;|&nbsp;
-  <a href="https://github.com/QizhiPei/biomatrix"><b>GitHub</b> 💻</a> &nbsp;|&nbsp;
+  <a href="https://github.com/QizhiPei/BioMatrix/blob/main/biomatrix_tech_report"><b>Paper Link</b> 📄</a> &nbsp;|&nbsp;
+  <a href="https://github.com/QizhiPei/BioMatrix"><b>GitHub</b> 💻</a> &nbsp;|&nbsp;
   <a href="https://huggingface.co/collections/QizhiPei/biomatrix"><b>Models & Data</b> 🤗</a>
 </div>
 <br>
 <div align="center" style="line-height: 1;">
-  <a href="https://github.com/QizhiPei/biomatrix/blob/main/LICENSE"><img alt="License"
+  <a href="https://github.com/QizhiPei/BioMatrix/blob/main/LICENSE"><img alt="License"
     src="https://img.shields.io/badge/Code_License-Apache_2.0-f5de53?&color=f5de53"/></a>
   <a href="https://huggingface.co/collections/QizhiPei/biomatrix"><img alt="Hugging Face"
     src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-BioMatrix-ffc107?color=ffc107&logoColor=white"/></a>
