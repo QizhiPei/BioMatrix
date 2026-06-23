@@ -7,7 +7,7 @@
 </div>
 <hr>
 <div align="center" style="line-height: 1;">
-  <a href="https://github.com/QizhiPei/BioMatrix/blob/main/biomatrix_tech_report"><b>Paper Link</b> 📄</a> &nbsp;|&nbsp;
+  <a href="http://arxiv.org/abs/2606.22138"><b>Paper Link</b> 📄</a> &nbsp;|&nbsp;
   <a href="https://github.com/QizhiPei/BioMatrix"><b>GitHub</b> 💻</a> &nbsp;|&nbsp;
   <a href="https://huggingface.co/collections/QizhiPei/biomatrix"><b>Models & Data</b> 🤗</a>
 </div>
@@ -275,9 +275,11 @@ This code repository and the model weights are licensed under [the Apache Licens
 ## 8. Citation
 
 ```bibtex
-@article{pei2025biomatrix,
+@article{pei2026biomatrix,
   title={BioMatrix: Towards a Comprehensive Biological Foundation Model Spanning the Modality Matrix of Sequences, Structures, and Language},
-  author={Pei, Qizhi and Zhou, Zhimeng and Duan, Yi and Zhao, Yiyang and He, Liang and Hsieh, Chang-Yu and He, Conghui and Yan, Rui and Wu, Lijun},
-  year={2025}
+  author={Pei, Qizhi and Zhou, Zhimeng and Duan, Yi and Zhao, Yiyang and Li, Wei and Guo, Han and He, Liang and Li, Chengping and Hsieh, Chang-Yu and He, Conghui and Yan, Rui and Wu, Lijun},
+  journal={arXiv preprint arXiv:2606.22138},
+  year={2026}
 }
 ```
+
