@@ -38,7 +38,7 @@ We present **BioMatrix**, a multimodal foundation model that natively integrates
 Built upon Qwen3 (1.7B and 4B), BioMatrix is continually pretrained on **304.4 billion tokens** spanning general and domain-specific text, molecular and protein data in both 1D and 3D forms, and cross-modal corpora that interleave biomolecular entities with scientific text and link distinct entities through molecule–protein and protein–protein interaction data. After instruction tuning on a comprehensive suite of downstream tasks covering **80 tasks across 6 categories**, BioMatrix achieves state-of-the-art or competitive performance on **77 out of 80 tasks**, demonstrating that a single, natively multimodal generalist model can effectively match or surpass specialized approaches across a wide range of biological tasks.
 
 <p align="center">
-  <img width="90%" src="figures/biomatrix_arch.png" alt="BioMatrix Architecture">
+  <img width="90%" src="figures/biomatrix_arch_v1.png" alt="BioMatrix Architecture">
 </p>
 
 ## 2. Model Summary
@@ -51,6 +51,10 @@ Built upon Qwen3 (1.7B and 4B), BioMatrix is continually pretrained on **304.4 b
 - Molecular 3D structures are tokenized via an improved MolStrucTok with a branch-decoupled decoder (512-entry codebook); protein 3D structures are tokenized via GCP-VQVAE (4,096-entry codebook).
 - A description-based embedding initialization grounds every newly added token in the pretrained Qwen3 embedding space before continual pretraining begins.
 
+<p align="center">
+  <img width="95%" src="figures/3D_tokenizers.png" alt="Molecule and Protein Structure Tokenizers">
+</p>
+
 ---
 
 **Continual Pretraining: 304.4B Tokens across Modalities**
@@ -59,12 +63,24 @@ Built upon Qwen3 (1.7B and 4B), BioMatrix is continually pretrained on **304.4 b
 - Stochastic composition and three-view instance patterns prevent the model from overfitting to any fixed input schema and encourage joint learning across heterogeneous representations.
 - Training is conducted on 64 NVIDIA H100 GPUs using the LLaMA-Factory framework.
 
+<p align="center">
+  <img width="95%" src="figures/biomatrix_cpt_data_v5.png" alt="BioMatrix Continual Pretraining Data">
+</p>
+
 ---
 
 **Instruction Tuning: 80 Tasks across 6 Categories**
 
 - The instruction-tuning corpus covers three entity scopes (molecule, protein, interaction) × two modality levels (1D sequence, 3D structure), totaling 80 tasks including unconditional generation, property prediction, captioning, synthesis, editing, optimization, folding, inverse folding, binding affinity prediction, and more.
 - Prompt template diversification is applied per sub-task to improve robustness to paraphrased instructions at inference time.
+
+<p align="center">
+  <img width="95%" src="figures/molecule_tasks_v1.png" alt="BioMatrix Molecule Tasks">
+</p>
+
+<p align="center">
+  <img width="95%" src="figures/protein_tasks_v1.png" alt="BioMatrix Protein Tasks">
+</p>
 
 ---
 
@@ -282,4 +298,3 @@ This code repository and the model weights are licensed under [the Apache Licens
   year={2026}
 }
 ```
-
